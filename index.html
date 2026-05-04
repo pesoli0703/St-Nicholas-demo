@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St. Nicholas Hospital — World-Class Healthcare</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --blue:#003B7A;
+  --blue-dark:#002654;
+  --blue-mid:#00509E;
+  --green:#00A86B;
+  --red:#E63946;
+  --white:#FFFFFF;
+  --gray:#F4F6F9;
+  --text:#1a2340;
+  --muted:#6B7A99;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:'DM Sans',sans-serif;
+color:var(--text);
+background:var(--white);
+overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;left:0;right:0;
+height:72px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 5%;
+background:rgba(0,27,68,0.95);
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+text-decoration:none;
+color:white;
+}
+.logo-cross{
+width:34px;height:34px;
+background:var(--green);
+border-radius:6px;
+position:relative;
+}
+.logo-cross:before,.logo-cross:after{
+content:'';
+position:absolute;
+background:white;
+}
+.logo-cross:before{width:18px;height:4px;top:15px;left:8px}
+.logo-cross:after{width:4px;height:18px;left:15px;top:8px}
+
+.logo-text strong{
+font-family:'Playfair Display',serif;
+font-size:14px;
+display:block;
+}
+.logo-text span{
+font-size:10px;
+opacity:.7;
+letter-spacing:1px;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+.nav-links a{
+color:white;
+opacity:.8;
+text-decoration:none;
+font-size:14px;
+}
+.nav-links a:hover{opacity:1}
+
+.btn{
+padding:10px 18px;
+border-radius:8px;
+font-size:13px;
+font-weight:600;
+text-decoration:none;
+display:inline-flex;
+align-items:center;
+gap:6px;
+}
+.btn-blue{background:var(--blue-mid);color:white}
+.btn-red{background:var(--red);color:white}
+.btn-green{background:var(--green);color:white}
+.btn-outline{border:1px solid white;color:white}
+
+/* HERO */
+.hero{
+min-height:100vh;
+background:linear-gradient(135deg,#001B44,#003B7A);
+display:flex;
+align-items:center;
+padding:120px 5% 80px;
+color:white;
+}
+.hero-content{max-width:650px}
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:clamp(36px,5vw,60px);
+margin-bottom:20px;
+}
+.hero p{
+opacity:.8;
+margin-bottom:30px;
+}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+
+/* FOOTER */
+footer{
+background:#001228;
+color:white;
+padding:40px 5%;
+text-align:center;
+margin-top:80px;
+}
+footer span{opacity:.6;font-size:13px}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+width:55px;height:55px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:26px;
+text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.nav-links{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#" class="logo">
+<div class="logo-cross"></div>
+<div class="logo-text">
+<strong>St. Nicholas Hospital</strong>
+<span>Lagos, Nigeria</span>
+</div>
+</a>
+
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">Specialists</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">About</a></li>
+</ul>
+
+<div>
+<a href="#" class="btn btn-blue">📅 Book Appointment</a>
+<a href="tel:017000000" class="btn btn-red">🚨 Emergency</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h1>World-Class Healthcare,<br>Now At Your Fingertips</h1>
+<p>Book appointments, access lab results, and connect with Nigeria's finest specialists — all from your phone.</p>
+<div class="hero-ctas">
+<a href="#" class="btn btn-green">📅 Book Appointment</a>
+<a href="#" class="btn btn-outline">🔐 Patient Portal</a>
+</div>
+</div>
+</section>
+
+<footer>
+<span>© 2026 St. Nicholas Hospital. Prototype built by Peacetech Multibiz Communications</span>
+</footer>
+
+<a href="https://wa.me/2348109615982" target="_blank" class="whatsapp">💬</a>
+
+</body>
+</html>
